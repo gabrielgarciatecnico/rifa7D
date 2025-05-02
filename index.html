@@ -1,106 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Rifa 7° - Sorteo Mayo</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'>
 </head>
-<body style="margin:0;padding:0;font-family:'Open Sans',sans-serif;background-color:#f9f9f9;">
+<body style='margin:0;padding:0;font-family:sans-serif;background-color:#f9f9f9;'>
+
+    
     <!-- Contenedor principal -->
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#f9f9f9;">
+    <table width='100%' border='0' cellspacing='0' cellpadding='0' style='background-color:#f9f9f9;'>
         <tr>
-            <td align="center" >
+            <td align='center' >
                 <!-- Menú superior -->
-                 <!--
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;">
+
+                <table width='100%' border='0' cellspacing='0' cellpadding='0' style='max-width:600px;margin:0 auto;'>
                     <tr>
-                        <td align="center" style="padding:10px;">
-                            <a href="${urls.online_version}" target="_blank" style="color:#95a5a6;text-decoration:none;font-size:12px;padding:0 15px;">versión online</a>
-                            <a href="${urls.share.selector}" target="_blank" style="color:#95a5a6;text-decoration:none;font-size:12px;padding:0 15px;">compartir</a>
+                        <td align='center' style='padding:10px;'>
+                            <a href='https://rifa7d.netlify.app/' target='_blank' style='color:#95a5a6;text-decoration:none;font-size:12px;padding:0 15px;'>versión online</a>
                         </td>
                     </tr>
                 </table>
-                -->
+
 
                 <!-- Header amarillo con logo -->
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;background-color:#ffcc04;">
+                <table width='100%' border='0' cellspacing='0' cellpadding='0' style='max-width:600px;margin:0 auto;background-color:#ffcc04;'>
                     <tr>
-                        <td align="center" style="padding:16px 10px;">
-                            <img src="https://www.freeiconspng.com/uploads/black-and-white-blank-ticket-17.png" alt="rifa" style="width:14%;max-width:204px;height:auto;"><span stylr="text-align:center"> ¡Gracias por tu compra! Tienes ## chances! </span>
+                        <td align='center' style='padding:16px 10px;'>
+                            <img src='https://www.freeiconspng.com/uploads/black-and-white-blank-ticket-17.png' alt='rifa' style='width:40%;max-width:204px;height:auto;'>
+                        </td>
+                        <td>
+                            <span stylr='text-align:center'> ¡Gracias <span id='nombre-url'></span> por tu aporte! 
+                                <br><br> Ya tenés <span id='chances-url-01'></span> chances confirmadas para el sorteo </span>
                         </td>
                     </tr>
                 </table>
 
                 <!-- Banner principal -->
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;background-color:#ffffff;">
+                <table width='100%' border='0' cellspacing='0' cellpadding='0' style='max-width:600px;margin:0 auto;background-color:#ffffff;'>
                     <tr>
-                        <td align="center" style="padding:22px 0 0 0;">
-                            <img src="https://raw.githubusercontent.com/gabrielgarciatecnico/rifa7D/58275f894ccd9d1dc4ecc534935c7929981b8860/rifa.jpeg" alt="Comprar Rifa 7D" style="width:60%;max-width:627px;height:auto;">
+                        <td align='center' style='padding:22px 0 0 0;'>
+                            <img src='https://raw.githubusercontent.com/gabrielgarciatecnico/rifa7D/58275f894ccd9d1dc4ecc534935c7929981b8860/rifa.jpeg' alt='Comprar Rifa 7D' style='width:60%;max-width:627px;height:auto;'>
                         </td>
                     </tr>
                 </table>
 
                 <!-- Sección de texto y countdown -->
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;background-color:#ffffff;">
+                <table width='100%' border='0' cellspacing='0' cellpadding='0' style='max-width:600px;margin:0 auto;background-color:#ffffff;'>
                     <tr>
-                        <td align="center" style="padding:22px 10px 10px;">
-                            <p style="font-size:24px;line-height:33.6px;color:#221d0d;margin:0;font-weight:bold;">SORTEO 19/05/2025, 17:45 HS </p>
+                        <td align='center' style='padding:22px 10px 10px;'>
+                            <p style='font-size:24px;line-height:33.6px;color:#221d0d;margin:0;font-weight:bold;'>SORTEO 19/05/2025, 17:45 HS </p>
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" style="padding:10px;">
-                            <!-- Countdown Timer (reemplazar con imagen o HTML estático) -->
-                            <div style="background-color:#ffffff;color:#000000;font-family:'Open Sans';font-size:75px;text-align:center;width:80%;margin:0 auto;">
-                                ¡## chances!
-                            </div>
+                        <td align='center' style='padding:10px;'>
+                             <p style='font-family:sans-serif;font-size:55px;text-align:center;width:100%;margin:0 auto;'>
+                                ¡Tenés <span id='chances-url-02'></span> chances!
+                            </p>
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" style="padding:0 44px 10px;">
-                            <p style="font-size:16px;line-height:22.4px;margin:0;">Sortearemos en vivo por Instagram <a href="https://www.instagram.com/feli_tattoo/profilecard/">@feli_tatoo</a></p>
-                            <p><a href="https://form.typeform.com/to/cdoJzFPR" style="display:inline-block;background-color:#ffce00;color:#fffffe;font-size:14px;font-weight:bold;padding:13px 33px;text-decoration:none;border-radius:44px;border:3px solid #ffce00;">Más chances</a></p>
+                        <td align='center' style='padding:0 44px 10px;'>
+                            <p style='font-size:16px;line-height:22.4px;margin:0;'>Sortearemos en vivo por Instagram <a href='https://www.instagram.com/feli_tattoo/profilecard/'>@feli_tatoo</a></p>
+                            <p><a href='https://form.typeform.com/to/cdoJzFPR' style='display:inline-block;background-color:#ffce00;color:#fffffe;font-size:14px;font-weight:bold;padding:13px 33px;text-decoration:none;border-radius:44px;border:3px solid #ffce00;'>Más chances</a></p>
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" style="padding:23px 10px 14px;">
-                            <div style="width:88%;border-top:1px solid #BBBBBB;margin:0 auto;"></div>
+                        <td  align='center' style='padding:0 44px 10px;'>
+                            <p style='font-size:16px;line-height:22.4px;margin:0;'><i>Sólo quedan <span id='restantes-url'></span> rifas</i></p></td>
+                    </tr>
+                    <tr>
+                        <td align='center' style='padding:23px 10px 14px;'>
+                            <div style='width:88%;border-top:1px solid #BBBBBB;margin:0 auto;'></div>
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" style="padding:22px 10px 17px;">
-                            <p style="font-size:20px;line-height:28px;color:#221d0d;margin:0;">Listado de premios</p>
+                        <td align='center' style='padding:22px 10px 17px;'>
+                            <p style='font-size:20px;line-height:28px;color:#221d0d;margin:0;'>Listado de premios</p>
                         </td>
                     </tr>
                 </table>
 
                 <!-- Pasos -->
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;background-color:#ffffff;">
+                <table width='100%' border='0' cellspacing='0' cellpadding='0' style='max-width:600px;margin:0 auto;background-color:#ffffff;'>
                     <tr>
-                        <td width="25%" align="center" style="padding:10px;vertical-align:top;">
-                            <p style="font-size:18px;line-height:25.2px;margin:0;font-weight:bold;">1° PREMIO</p>
-                            <p style="font-size:14px;line-height:140%;margin:3px 0 10px 0;">Tatuaje a elección (25cm. máximo)</p>
+                        <td width='25%' align='center' style='padding:10px;vertical-align:top;'>
+                            <p style='font-size:18px;line-height:25.2px;margin:0;font-weight:bold;'>1° PREMIO</p>
+                            <p style='font-size:14px;line-height:140%;margin:3px 0 10px 0;'>Tatuaje a elección (25cm. máximo)</p>
                         </td>
-                        <td width="25%" align="center" style="padding:10px;vertical-align:top;">
-                            <p style="font-size:18px;line-height:25.2px;margin:0;font-weight:bold;">2° PREMIO</p>
-                            <p style="font-size:14px;line-height:140%;margin:3px 0 10px 0;">Auriculares inalámbricos Xiaomi</p>
+                        <td width='25%' align='center' style='padding:10px;vertical-align:top;'>
+                            <p style='font-size:18px;line-height:25.2px;margin:0;font-weight:bold;'>2° PREMIO</p>
+                            <p style='font-size:14px;line-height:140%;margin:3px 0 10px 0;'>Auriculares inalámbricos Xiaomi</p>
                         </td>
-                        <td width="25%" align="center" style="padding:10px;vertical-align:top;">
-                            <p style="font-size:18px;line-height:25.2px;margin:0;font-weight:bold;">3° PREMIO</p>
-                            <p style="font-size:14px;line-height:140%;margin:3px 0 10px 0;">Voucher Corte de Cabello + Crema Natura</p>
+                        <td width='25%' align='center' style='padding:10px;vertical-align:top;'>
+                            <p style='font-size:18px;line-height:25.2px;margin:0;font-weight:bold;'>3° PREMIO</p>
+                            <p style='font-size:14px;line-height:140%;margin:3px 0 10px 0;'>Voucher Corte de Cabello + Crema Natura</p>
                         </td>
-                        <td width="25%" align="center" style="padding:10px;vertical-align:top;">
-                            <p style="font-size:18px;line-height:25.2px;margin:0;font-weight:bold;">4° PREMIO</p>
-                            <p style="font-size:14px;line-height:140%;margin:3px 0 10px 0;">Caja de desayuno</p>
+                        <td width='25%' align='center' style='padding:10px;vertical-align:top;'>
+                            <p style='font-size:18px;line-height:25.2px;margin:0;font-weight:bold;'>4° PREMIO</p>
+                            <p style='font-size:14px;line-height:140%;margin:3px 0 10px 0;'>Caja de desayuno</p>
                         </td>
                     </tr>
                 </table>
 
                 <!-- Botón CTA -->
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;background-color:#ffffff;">
+                <table width='100%' border='0' cellspacing='0' cellpadding='0' style='max-width:600px;margin:0 auto;background-color:#ffffff;'>
                     <tr>
-                        <td align="center" style="padding:33px 10px 37px;">
-                            <img src="https://raw.githubusercontent.com/gabrielgarciatecnico/rifa7D/d6f87c906cc299f42c3eb246ffe61bd6b9ea23cc/premios.jpeg"alt="Lista de Premios" style="width:100%;max-width:627px;height:auto;">
+                        <td align='center' style='padding:33px 10px 37px;'>
+                            <img src='https://raw.githubusercontent.com/gabrielgarciatecnico/rifa7D/d6f87c906cc299f42c3eb246ffe61bd6b9ea23cc/premios.jpeg'alt='Lista de Premios' style='width:100%;max-width:627px;height:auto;'>
                         
                         </td>
                     </tr>
@@ -108,36 +116,49 @@
 
                 <!-- Footer -->
                  
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;">
+                <table width='100%' border='0' cellspacing='0' cellpadding='0' style='max-width:600px;margin:0 auto;'>
                     <tr>
-                        <td align="center" style="padding:15px 10px 14px;">
-                            <p style="font-size:12px;line-height:16.8px;margin:0;">© Rifa 7 D</p>
+                        <td align='center' style='padding:15px 10px 14px;'>
+                            <p style='font-size:12px;line-height:16.8px;margin:0;'>© Rifa 7 D</p>
                         </td>
                     </tr>
                     <tr>
-                        <!-- Iconos sociales 
-                        <td align="center" style="padding:4px 10px 27px;">
-                            
-                            <a href="#" style="display:inline-block;width:32px;height:32px;background-color:#000000;border-radius:50%;margin:0 13px;"></a>
-                            <a href="#" style="display:inline-block;width:32px;height:32px;background-color:#000000;border-radius:50%;margin:0 13px;"></a>
-                            <a href="#" style="display:inline-block;width:32px;height:32px;background-color:#000000;border-radius:50%;margin:0 13px;"></a>
-                        </td>
-                    -->
                     </tr>
                 </table>
 
                 <!-- Footer legal -->
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;">
+                <table width='100%' border='0' cellspacing='0' cellpadding='0' style='max-width:600px;margin:0 auto;'>
                     <tr>
-                        <!--
-                        <td align="center" style="padding:10px;font-size:12px;">
-                            <p>Para dejar de recibir estos mensajes utiliza el siguiente enlace: <a href="#" style="color:#0000ee;">quiero desuscribirme</a></p>
-                        </td>
-                        -->
                     </tr>
                 </table>
             </td>
         </tr>
     </table>
+
+    <script>
+        // Extraer parámetro de la URL (ej: sitio.com/?nombre=Juan)
+        function getUrlParameter(name) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(window.location.href);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Usar el parámetro
+        var nombre_mostrar = getUrlParameter('nombre') || 'NOMBRE';
+        document.getElementById('nombre-url').textContent = nombre_mostrar;
+
+               // Usar el parámetro
+         var cant_chances = getUrlParameter('chances') || 'CHANCES';
+        document.getElementById('chances-url-01').textContent = cant_chances;
+        document.getElementById('chances-url-02').textContent = cant_chances;
+
+        // Usar el parámetro
+        var restantes = getUrlParameter('restantes') || 'RESTANTES';   
+        document.getElementById('restantes-url').textContent = restantes;
+    </script>
+    
 </body>
 </html>

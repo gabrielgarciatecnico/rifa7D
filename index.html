@@ -32,7 +32,7 @@
                         </td>
                         <td>
                             <span style='text-align:center'> ¡Gracias <span id='nombre-url'></span> por tu aporte! 
-                                <br><br> Ya tenés <span id='chances-url-01'></span> chances confirmadas para el sorteo </span>
+                                <br><br> Ya tenés <span id='chances-url-01'></span> <span id='chance-texto-01'></span> confirmadas para el sorteo </span>
                         </td>
                     </tr>
                 </table>
@@ -56,7 +56,7 @@
                     <tr>
                         <td align='center' style='padding:10px;'>
                              <p style='font-family:sans-serif;font-size:55px;text-align:center;width:100%;margin:0 auto;'>
-                                ¡Tenés <span id='chances-url-02'></span> chances!
+                                ¡Tenés <span id='chances-url-02'></span> <span id='chance-texto-02'></span>!
                             </p>
                         </td>
                     </tr>
@@ -158,6 +158,14 @@
         // Usar el parámetro
         var restantes = getUrlParameter('restantes') || 'RESTANTES';   
         document.getElementById('restantes-url').textContent = restantes;
+
+        if(cant_chances>1){
+            document.getElementById('chance-texto-01').textContent = 'chances'
+            document.getElementById('chance-texto-02').textContent = 'chances'
+        } else {
+            document.getElementById('chance-texto-01').textContent = 'chance'
+            document.getElementById('chance-texto-02').textContent = 'chances'
+        }
     </script>
     
 </body>
